@@ -27,7 +27,7 @@ const generateRandomDocuments = (count: number): DocumentData[] => {
       tags: chance.unique(chance.word, chance.integer({ min: 1, max: 5 })),
       published_date: chance.date(),
       summary: chance.sentence(),
-      category: chance.pickone(["Technology", "Science", "Art", "History", "Health"]),
+      category: chance.pickone(["Technology", "Science", "Art", "History", "Healthl"]),
     });
   }
   return documents;
